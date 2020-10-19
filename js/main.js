@@ -17,9 +17,13 @@ var items = '';
 for (var i = 0; i < list.length; i++) {
     var item = list[i];
 
+    // ORDINE NUMERICO
+    var index = list.indexOf(item);
+    console.log(index);
+
     // OUTPUT
-    items += '<li>' + item + '<li>'
+    items += '<li>' + item + '<li>';
     document.getElementById('surnames-list').innerHTML = '<li>' + items + '<li>';
 }
-
+ 
 
